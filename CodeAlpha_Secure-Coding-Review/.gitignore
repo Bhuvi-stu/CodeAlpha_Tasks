@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.pytest-tmp/
+.pip-audit-cache/
+*.py[cod]
+.env
+instance/
+*.sqlite3
+*.db

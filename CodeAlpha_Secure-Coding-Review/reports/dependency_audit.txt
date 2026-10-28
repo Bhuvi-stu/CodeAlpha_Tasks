@@ -1,0 +1,11 @@
+Dependency audit attempt status
+==============================
+
+Command attempted:
+python -m pip_audit -r requirements.txt --format columns --cache-dir .pip-audit-cache --output reports\dependency_audit.txt
+
+Status: NOT COMPLETED. No dependency vulnerability result was produced.
+
+Reason: pip-audit could not verify the TLS certificate while requesting package metadata from https://pypi.org. The reported error was SSLCertVerificationError: certificate verify failed: unable to get local issuer certificate.
+
+Do not interpret this status as a clean dependency audit. Retry after network access and the Python certificate chain are configured correctly.
